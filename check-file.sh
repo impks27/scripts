@@ -1,4 +1,5 @@
 #!/bin/bash 
+#if [ -f $1 ]
 if [ -e $1 ] 
 then     
    echo "File exists!!!" 
