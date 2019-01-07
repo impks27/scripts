@@ -1,0 +1,1 @@
+tail -5f console.log|head -2
