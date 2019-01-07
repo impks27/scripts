@@ -1,0 +1,8 @@
+ln -s print_numbers.sh print_num_sl //Doesn't not work when original file is deleted
+ln print_numbers.sh print_num_hl // Works when original file deleted
+
+
+
+Soft links are link to the file name and can reside on different filesytem as well; however hard links are link to the inode of the file and have to be on the same filesytem as that of the file. Deleting the original file makes the soft link inactive (broken link) but does not affect the hard link (Hard link will still access a copy of the file.
+
+
